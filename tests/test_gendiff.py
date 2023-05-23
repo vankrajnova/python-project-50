@@ -2,6 +2,9 @@ import json
 import pytest
 
 from gendiff import generate_diff
+from tests import FIXTURES_PATH
+
+
 #
 #
 # @pytest.fixture
@@ -12,7 +15,7 @@ from gendiff import generate_diff
 
 
 def test_if_key_in_both_files():
-    with open('fixtures/expected_result.txt') as f:
+    with open(f'{FIXTURES_PATH}expected_result.txt') as f:
         expected_str = f.read()
-    print(generate_diff('fixtures/file1.yml', 'fixtures/file2.yml'))
-    assert generate_diff('fixtures/file1.yml', 'fixtures/file2.yml') == expected_str
+    print(generate_diff(f'{FIXTURES_PATH}file1.yml', f'{FIXTURES_PATH}file2.yml'))
+    assert generate_diff(f'{FIXTURES_PATH}file1.yml', f'{FIXTURES_PATH}file2.yml') == expected_str
