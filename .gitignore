@@ -5,6 +5,6 @@ dist
 .idea
 .pytest_cache
 __pytest_cache__
-.htmlcov
+htmlcov
 .coverage
 coverage.xml
