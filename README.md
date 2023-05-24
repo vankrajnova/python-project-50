@@ -6,15 +6,15 @@
 
 
 
-[//]: # (#### Test coverage:)
+#### Test coverage:
 
-[//]: # ([![Test coverage]&#40;https://api.codeclimate.com/v1/badges/6a759fbde39766518a7e/test_coverage&#41;]&#40;https://codeclimate.com/github/vankrajnova/python-project-50/test_coverage&#41;)
+[![Test coverage](https://api.codeclimate.com/v1/badges/6a759fbde39766518a7e/test_coverage)](https://codeclimate.com/github/vankrajnova/python-project-50/test_coverage)
 
-[//]: # ()
-[//]: # ()
-[//]: # (#### Maintainability:)
 
-[//]: # ([![Maintainability]&#40;https://api.codeclimate.com/v1/badges/6a759fbde39766518a7e/maintainability&#41;]&#40;https://codeclimate.com/github/vankrajnova/python-project-50/maintainability&#41;)
+
+#### Maintainability:
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/6a759fbde39766518a7e/maintainability)](https://codeclimate.com/github/vankrajnova/python-project-50/maintainability)
 
 
 #### *Compare two json-files:*
