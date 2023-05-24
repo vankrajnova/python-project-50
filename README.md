@@ -8,13 +8,13 @@
 
 #### Test coverage:
 
-[![Test coverage](https://api.codeclimate.com/v1/badges/6061998ccc573f05ce0e/test_coverage)](https://codeclimate.com/github/vankrajnova/python-project-51/test_coverage)
+[![Test coverage](https://api.codeclimate.com/v1/badges/6d225bcb1ee84fab5518/test_coverage)](https://codeclimate.com/github/vankrajnova/python-project-50/test_coverage)
 
 
 
 #### Maintainability:
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/6061998ccc573f05ce0e/maintainability)](https://codeclimate.com/github/vankrajnova/python-project-51/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6d225bcb1ee84fab5518/maintainability)](https://codeclimate.com/github/vankrajnova/python-project-50/maintainability)
 
 
 #### *Compare two json-files:*
