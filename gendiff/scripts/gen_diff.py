@@ -8,8 +8,8 @@ def main():
 
     file_path1 = args.first_file
     file_path2 = args.second_file
-    return generate_diff(file_path1, file_path2)
+    print(generate_diff(file_path1, file_path2))
 
 
 if __name__ == '__main__':
-    print(main())
+    main()
