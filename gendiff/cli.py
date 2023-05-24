@@ -12,7 +12,3 @@ def parse_args():
                         default='stylish',
                         type=str)
     return parser.parse_args()
-
-
-if __name__ == '__main__':
-    parse_args()
