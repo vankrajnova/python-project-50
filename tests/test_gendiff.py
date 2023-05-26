@@ -1,5 +1,4 @@
 import pytest
-
 from gendiff import generate_diff
 from tests import FIXTURES_DIR
 
@@ -20,9 +19,9 @@ JSON2 = _get_file_path_by('file2.json')
 YAML1 = _get_file_path_by('file1.yml')
 YAML2 = _get_file_path_by('file2.yml')
 NESTED_JSON1 = _get_file_path_by('nested_file1.json')
-NESTED_JSON2 = _get_file_path_by('nested_file1.json')
+NESTED_JSON2 = _get_file_path_by('nested_file2.json')
 NESTED_YAML1 = _get_file_path_by('nested_file1.yml')
-NESTED_YAML2 = _get_file_path_by('nested_file1.yml')
+NESTED_YAML2 = _get_file_path_by('nested_file2.yml')
 FLAT_OUTPUT = _get_expected_output_by('flat_output.txt')
 NESTED_OUTPUT = _get_expected_output_by('nested_output.txt')
 

@@ -9,11 +9,11 @@ packages = [{ include = "gendiff" }]
 [tool.poetry.dependencies]
 python = "^3.11"
 pytest = "^7.3.1"
-pytest-cov = "^4.0.0"
+pytest-cov = "^4.1.0"
 pyyaml = "^6.0"
 
 [tool.poetry.scripts]
-gendiff = "gendiff.scripts.gen_diff:main"
+gendiff = "gendiff.scripts.gendiff:main"
 
 
 [tool.poetry.group.dev.dependencies]
