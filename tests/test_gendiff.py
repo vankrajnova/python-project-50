@@ -4,7 +4,6 @@ from tests import FIXTURES_DIR
 
 
 def _get_expected_output_by(file_name: str) -> str:
-    print(f'file name=', file_name)
     with open(f'{FIXTURES_DIR}{file_name}') as f:
         expected_str = f.read()
     return expected_str
@@ -22,20 +21,20 @@ NESTED_JSON1 = _get_file_path_by('nested_file1.json')
 NESTED_JSON2 = _get_file_path_by('nested_file2.json')
 NESTED_YAML1 = _get_file_path_by('nested_file1.yml')
 NESTED_YAML2 = _get_file_path_by('nested_file2.yml')
-FLAT_OUTPUT = _get_expected_output_by('flat_output.txt')
-NESTED_OUTPUT = _get_expected_output_by('nested_output.txt')
-PLAIN_OUTPUT = _get_expected_output_by('plain_output.txt')
+FLAT_STYLISH_OUTPUT = _get_expected_output_by('flat_output.txt')
+NESTED_STYLISH_OUTPUT = _get_expected_output_by('nested_output.txt')
 FLAT_JSON_OUTPUT = _get_expected_output_by('flat_json_output.json')
 NESTED_JSON_OUTPUT = _get_expected_output_by('nested_json_output.json')
+PLAIN_OUTPUT = _get_expected_output_by('plain_output.txt')
 
 
 @pytest.mark.parametrize(
     'filepath1, filepath2, output, formatter',
     [
-        (JSON1, JSON2, FLAT_OUTPUT, 'stylish'),
-        (YAML1, YAML2, FLAT_OUTPUT, 'stylish'),
-        (NESTED_JSON1, NESTED_JSON2, NESTED_OUTPUT, 'stylish'),
-        (NESTED_YAML1, NESTED_YAML2, NESTED_OUTPUT, 'stylish'),
+        (JSON1, JSON2, FLAT_STYLISH_OUTPUT, 'stylish'),
+        (YAML1, YAML2, FLAT_STYLISH_OUTPUT, 'stylish'),
+        (NESTED_JSON1, NESTED_JSON2, NESTED_STYLISH_OUTPUT, 'stylish'),
+        (NESTED_YAML1, NESTED_YAML2, NESTED_STYLISH_OUTPUT, 'stylish'),
         (NESTED_JSON1, NESTED_JSON2, PLAIN_OUTPUT, 'plain'),
         (NESTED_YAML1, NESTED_YAML2, PLAIN_OUTPUT, 'plain'),
         (JSON1, JSON2, FLAT_JSON_OUTPUT, 'json'),
