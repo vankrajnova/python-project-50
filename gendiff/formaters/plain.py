@@ -10,19 +10,19 @@ def _parse_value(value: str | dict) -> str:
             return f"'{value}'"
 
 
-def make_plain(diff, path=''):
+def make_plain(diff: dict, path: str = '') -> str:
     def make_str_for_unchanged():
         return ""
 
     def make_str_for_added(key, value):
-        return f"\nProperty '{key}' was added with value: {_parse_value(value)}"
+        return f"Property '{key}' was added with value: {_parse_value(value)}\n"
 
     def make_str_for_removed(key):
-        return f"\nProperty '{key}' was removed"
+        return f"Property '{key}' was removed\n"
 
     def make_str_for_updated(key, old_value, value):
-        result = f"\nProperty '{key}' was updated. "
-        result += f"From {_parse_value(old_value)} to {_parse_value(value)}"
+        result = f"Property '{key}' was updated. "
+        result += f"From {_parse_value(old_value)} to {_parse_value(value)}\n"
         return result
 
     result = ''

@@ -31,3 +31,7 @@
 
 #### *Compare two nested-files, format=plain:*
 [![asciicast](https://asciinema.org/a/xv3sLwbTSgnbz9ZcpjgSwjvfi.svg)](https://asciinema.org/a/xv3sLwbTSgnbz9ZcpjgSwjvfi)
+
+
+#### *Compare two nested-files, format=json:*
+[![asciicast](https://asciinema.org/a/f1bKbGn0aFex6EkhvaAiIthhO.svg)](https://asciinema.org/a/f1bKbGn0aFex6EkhvaAiIthhO)

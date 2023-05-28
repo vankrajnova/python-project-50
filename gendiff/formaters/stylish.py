@@ -16,7 +16,7 @@ def _convert_string(string: str) -> str:
     return string
 
 
-def make_stylish(diff):
+def make_stylish(diff: dict) -> str:
     def walk(diff):
         result = {}
 
