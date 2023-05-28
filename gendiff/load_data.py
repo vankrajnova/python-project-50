@@ -8,4 +8,6 @@ def load(file_name: str) -> dict:
     elif file_name.endswith('.yml') or file_name.endswith('.yaml'):
         return yaml.safe_load(open(file_name))
     else:
-        raise Exception('Unknown file format! Available formats: yml, yaml, json')
+        raise Exception(
+            'Unknown file format! Available formats: yml, yaml, json'
+        )

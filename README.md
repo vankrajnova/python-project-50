@@ -24,3 +24,6 @@
 #### *Compare two yml-files:*
 [![asciicast](https://asciinema.org/a/M2m77x46KFZFpKaaLCjFNrb2b.svg)](https://asciinema.org/a/M2m77x46KFZFpKaaLCjFNrb2b)
 
+
+#### *Compare two nested-files:*
+[![asciicast](https://asciinema.org/a/MdcIu2Ld39lAq6Dbk0IipPdCA.svg)](https://asciinema.org/a/MdcIu2Ld39lAq6Dbk0IipPdCA)
