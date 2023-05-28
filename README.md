@@ -17,13 +17,17 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/6d225bcb1ee84fab5518/maintainability)](https://codeclimate.com/github/vankrajnova/python-project-50/maintainability)
 
 
-#### *Compare two json-files:*
+#### *Compare two json-files, format=stylish:*
 [![asciicast](https://asciinema.org/a/oIbeayW4kF1Sc1Kwp2Akc13q1.svg)](https://asciinema.org/a/oIbeayW4kF1Sc1Kwp2Akc13q1)
 
 
-#### *Compare two yml-files:*
+#### *Compare two yml-files, format=stylish:*
 [![asciicast](https://asciinema.org/a/M2m77x46KFZFpKaaLCjFNrb2b.svg)](https://asciinema.org/a/M2m77x46KFZFpKaaLCjFNrb2b)
 
 
-#### *Compare two nested-files:*
+#### *Compare two nested-files, format=stylish:*
 [![asciicast](https://asciinema.org/a/MdcIu2Ld39lAq6Dbk0IipPdCA.svg)](https://asciinema.org/a/MdcIu2Ld39lAq6Dbk0IipPdCA)
+
+
+#### *Compare two nested-files, format=plain:*
+[![asciicast](https://asciinema.org/a/xv3sLwbTSgnbz9ZcpjgSwjvfi.svg)](https://asciinema.org/a/xv3sLwbTSgnbz9ZcpjgSwjvfi)
