@@ -15,7 +15,6 @@ def _make_str(
         action: str, path: str, value: str, old_value: str | None = None
 ) -> str:
     map_dict = {
-        "unchanged": "\n",
         "removed": "was removed\n",
         "updated": f"was updated. "
                    f"From {_parse_value(old_value)} to {_parse_value(value)}\n",
