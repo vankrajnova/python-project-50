@@ -1,5 +1,8 @@
 import pytest
 from gendiff import generate_diff
+from gendiff.diff import build_diff
+from gendiff.formaters.plain import make_plain
+from gendiff.load_data import load
 from tests import FIXTURES_DIR
 
 
@@ -55,3 +58,26 @@ PLAIN_OUTPUT = _get_expected_output_by('plain_output.txt')
 )
 def test_generate_diff(filepath1, filepath2, output, formatter):
     assert generate_diff(filepath1, filepath2, formatter) == output
+
+
+def test():
+    diff = build_diff(load(NESTED_JSON1), load(NESTED_JSON2))
+    # print(diff)
+    print(make_plain(diff))
+    make_plain(diff)
+    # action = "updated"
+    # value = 1
+    # old_value = 0
+    #
+    # d = {
+    #     "unchanged": "",
+    #     "removed": "was removed\n",
+    #     "updated": f"was updated. From {old_value} to {value})\n",
+    #     "added": f"was added with value: {value}\n"
+    # }
+    # s = ''
+    # for key, value in d.items():
+    #     if key == action:
+    #         print('s')
+    #         s += value
+    # print(s)
