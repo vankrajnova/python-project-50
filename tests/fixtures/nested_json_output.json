@@ -2,23 +2,29 @@
     "common": {
         "children": {
             "follow": {
-                "added": false
+                "action": "added",
+                "value": false
             },
             "setting1": {
-                "unchanged": "Value 1"
+                "action": "unchanged",
+                "value": "Value 1"
             },
             "setting2": {
-                "removed": 200
+                "action": "removed",
+                "value": 200
             },
             "setting3": {
-                "new_value": null,
-                "old_value": true
+                "action": "updated",
+                "old_value": true,
+                "value": null
             },
             "setting4": {
-                "added": "blah blah"
+                "action": "added",
+                "value": "blah blah"
             },
             "setting5": {
-                "added": {
+                "action": "added",
+                "value": {
                     "key5": "value5"
                 }
             },
@@ -27,16 +33,19 @@
                     "doge": {
                         "children": {
                             "wow": {
-                                "new_value": "so much",
-                                "old_value": ""
+                                "action": "updated",
+                                "old_value": "",
+                                "value": "so much"
                             }
                         }
                     },
                     "key": {
-                        "unchanged": "value"
+                        "action": "unchanged",
+                        "value": "value"
                     },
                     "ops": {
-                        "added": "vops"
+                        "action": "added",
+                        "value": "vops"
                     }
                 }
             }
@@ -45,22 +54,26 @@
     "group1": {
         "children": {
             "baz": {
-                "new_value": "bars",
-                "old_value": "bas"
+                "action": "updated",
+                "old_value": "bas",
+                "value": "bars"
             },
             "foo": {
-                "unchanged": "bar"
+                "action": "unchanged",
+                "value": "bar"
             },
             "nest": {
-                "new_value": "str",
+                "action": "updated",
                 "old_value": {
                     "key": "value"
-                }
+                },
+                "value": "str"
             }
         }
     },
     "group2": {
-        "removed": {
+        "action": "removed",
+        "value": {
             "abc": 12345,
             "deep": {
                 "id": 45
@@ -68,7 +81,8 @@
         }
     },
     "group3": {
-        "added": {
+        "action": "added",
+        "value": {
             "deep": {
                 "id": {
                     "number": 45

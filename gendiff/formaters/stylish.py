@@ -16,6 +16,21 @@ def _convert_string(string: str) -> str:
     return string
 
 
+def _make_dict(
+        action: str, key: str, value: str, old_value: str | None = None
+) -> dict:
+    map_dict = {
+        'added': {f'+ {key}': value},
+        'removed': {f'- {key}': value},
+        'updated': {f'- {key}': old_value,
+                    f'+ {key}': value},
+        'unchanged': {key: value}
+    }
+    for key, value in map_dict.items():
+        if key == action:
+            return value
+
+
 def make_stylish(diff: dict) -> str:
     def walk(diff):
         result = {}
@@ -23,15 +38,13 @@ def make_stylish(diff: dict) -> str:
         for key, value in sorted(diff.items()):
             if 'children' in value:
                 result[key] = walk(value['children'])
-            elif 'old_value' in value:
-                result[f'- {key}'] = value['old_value']
-                result[f'+ {key}'] = value['new_value']
-            elif 'unchanged' in value:
-                result[key] = value['unchanged']
-            elif 'added' in value:
-                result[f'+ {key}'] = value['added']
-            elif 'removed' in value:
-                result[f'- {key}'] = value['removed']
+            else:
+                action = value['action']
+                old = value['old_value'] if action == 'updated' else None
+                result.update(
+                    _make_dict(action, key, value['value'], old)
+                )
+
         return result
 
     result = json.dumps(walk(diff), indent=4)
