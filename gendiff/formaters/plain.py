@@ -5,7 +5,7 @@ def _parse_value(value) -> str:
     if isinstance(value, dict):
         return "[complex value]"
     if any(
-        (type(value) is bool, value is None)
+        (type(value) is bool, isinstance(value, int), value is None)
     ):
         return value if isinstance(value, str) else dumps(value)
     return f"'{value}'"

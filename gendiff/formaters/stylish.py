@@ -17,7 +17,7 @@ def _convert_string(string: str) -> str:
 
 
 def _make_dict(
-        action: str, key: str, value: str, old_value: str | None = None
+        action: str, key: str, value: str, old_value: str | None = None,
 ) -> dict:
     map_dict = {
         'added': {f'+ {key}': value},

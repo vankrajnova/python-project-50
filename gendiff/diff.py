@@ -1,4 +1,6 @@
-def _make_dict(action, value, old_value=None):
+def _make_dict(
+        action: str, value: str, old_value: str | None = None,
+) -> dict:
     map_dict = {
         'updated': {
             'action': 'updated',
