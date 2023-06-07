@@ -8,3 +8,5 @@ __pytest_cache__
 htmlcov
 .coverage
 coverage.xml
+.DS_Store
+__pycache__
