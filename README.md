@@ -1,37 +1,55 @@
-### Hexlet tests and linter status:
+## Utility compares two files and shows the difference between them.
+
+
+#### Autotests and linter status:
 [![Actions Status](https://github.com/vankrajnova/python-project-50/workflows/hexlet-check/badge.svg)](https://github.com/vankrajnova/python-project-50/actions)
 
-### My tests and linter status:
 [![Actions Status](https://github.com/vankrajnova/python-project-50/workflows/python-ci/badge.svg)](https://github.com/vankrajnova/python-project-50/actions)
-
-
-
-#### Test coverage:
 
 [![Test coverage](https://api.codeclimate.com/v1/badges/6d225bcb1ee84fab5518/test_coverage)](https://codeclimate.com/github/vankrajnova/python-project-50/test_coverage)
 
-
-
-#### Maintainability:
-
 [![Maintainability](https://api.codeclimate.com/v1/badges/6d225bcb1ee84fab5518/maintainability)](https://codeclimate.com/github/vankrajnova/python-project-50/maintainability)
 
+### Install:
 
-#### *Compare two json-files, format=stylish:*
-[![asciicast](https://asciinema.org/a/oIbeayW4kF1Sc1Kwp2Akc13q1.svg)](https://asciinema.org/a/oIbeayW4kF1Sc1Kwp2Akc13q1)
-
-
-#### *Compare two yml-files, format=stylish:*
-[![asciicast](https://asciinema.org/a/M2m77x46KFZFpKaaLCjFNrb2b.svg)](https://asciinema.org/a/M2m77x46KFZFpKaaLCjFNrb2b)
+1. `git clone git@github.com:vankrajnova/python-project-50.git`
+2. `make install`
+3. `make package-install`
 
 
-#### *Compare two nested-files, format=stylish:*
-[![asciicast](https://asciinema.org/a/MdcIu2Ld39lAq6Dbk0IipPdCA.svg)](https://asciinema.org/a/MdcIu2Ld39lAq6Dbk0IipPdCA)
+### How to use:
+
+`gendiff [-h] [-f FORMAT] first_file second_file`
+
+##### Supported file formats:
+
+* json
+* yaml/yml
+
+##### Supported output formats:
+
+* stylish
+* plain
+* json
 
 
-#### *Compare two nested-files, format=plain:*
-[![asciicast](https://asciinema.org/a/xv3sLwbTSgnbz9ZcpjgSwjvfi.svg)](https://asciinema.org/a/xv3sLwbTSgnbz9ZcpjgSwjvfi)
+[![asciicast](https://asciinema.org/a/GBjNjdBYXlUQmnUD4vk2edAnO.svg)](https://asciinema.org/a/GBjNjdBYXlUQmnUD4vk2edAnO)
 
 
-#### *Compare two nested-files, format=json:*
-[![asciicast](https://asciinema.org/a/f1bKbGn0aFex6EkhvaAiIthhO.svg)](https://asciinema.org/a/f1bKbGn0aFex6EkhvaAiIthhO)
+#### Compare two json files, format 'stylish'
+[![asciicast](https://asciinema.org/a/xwTuQS8H7hRNPZBVyubfBqpTc.svg)](https://asciinema.org/a/xwTuQS8H7hRNPZBVyubfBqpTc)
+
+#### Compare two yml files, format 'stylish'
+[![asciicast](https://asciinema.org/a/7LB27tOVC51APsMty7YXsdpxK.svg)](https://asciinema.org/a/7LB27tOVC51APsMty7YXsdpxK)
+
+#### Compare two json files, format 'plain'
+[![asciicast](https://asciinema.org/a/Ktcz1gbOpyCnK7PKKmP8PNhFg.svg)](https://asciinema.org/a/Ktcz1gbOpyCnK7PKKmP8PNhFg)
+
+#### Compare two yml files, format 'plain'
+[![asciicast](https://asciinema.org/a/yNphaIzFR27TDaah6BUAVrex4.svg)](https://asciinema.org/a/yNphaIzFR27TDaah6BUAVrex4)
+
+#### Compare two json files, format 'json'
+[![asciicast](https://asciinema.org/a/X3LC9F5sBZk5sOkVmI48dy5x1.svg)](https://asciinema.org/a/X3LC9F5sBZk5sOkVmI48dy5x1)
+
+#### Compare two yml files, format 'json'
+[![asciicast](https://asciinema.org/a/SkbnxXzUhKh01WWcr9Ba3vryL.svg)](https://asciinema.org/a/SkbnxXzUhKh01WWcr9Ba3vryL)

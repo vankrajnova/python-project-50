@@ -10,3 +10,7 @@ def formatting(diff: dict, formatter: str):
         return make_plain(diff)[:-1]
     elif formatter == 'json':
         return make_json(diff)
+    else:
+        raise Exception(
+            'Unknown format! Available formats: stylish, plain, json'
+        )
