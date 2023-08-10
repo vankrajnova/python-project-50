@@ -44,7 +44,6 @@ def make_stylish(diff: dict) -> str:
                 result.update(
                     _make_dict(action, key, value['value'], old)
                 )
-
         return result
 
     result = json.dumps(walk(diff), indent=4)

@@ -1,14 +1,23 @@
-from json import dumps
+def serialize(value):
+    match value:
+        case True:
+            return 'true'
+        case False:
+            return 'false'
+        case None:
+            return 'null'
+        case _:
+            return value
 
 
-def _parse_value(value) -> str:
-    if isinstance(value, dict):
-        return "[complex value]"
-    if any(
-        (type(value) is bool, isinstance(value, int), value is None)
-    ):
-        return value if isinstance(value, str) else dumps(value)
-    return f"'{value}'"
+def stringify(value):
+    if type(value) is int:
+        return serialize(value)
+    if type(value) is str:
+        return f"'{serialize(value)}'"
+    if type(value) is dict:
+        return '[complex value]'
+    return f'{serialize(value)}'
 
 
 def _make_str(
@@ -17,8 +26,8 @@ def _make_str(
     map_dict = {
         "removed": "was removed\n",
         "updated": f"was updated. "
-                   f"From {_parse_value(old_value)} to {_parse_value(value)}\n",
-        "added": f"was added with value: {_parse_value(value)}\n"
+                   f"From {stringify(old_value)} to {stringify(value)}\n",
+        "added": f"was added with value: {stringify(value)}\n"
     }
 
     result = ''
